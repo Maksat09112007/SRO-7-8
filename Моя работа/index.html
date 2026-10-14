@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Трекер привычек</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Трекер привычек</h1>
+    <p>Отмечайте дни, растите серии и следите за статистикой</p>
+  </header>
+
+  <p id="message"></p>
+
+  <main>
+    <section class="box">
+      <h2>Добавить привычку</h2>
+      <form id="habit-form">
+        <input type="text" id="habit-name" placeholder="Название привычки">
+        <select id="habit-method">
+          <option value="">Метод не выбран</option>
+          <option value="Триггер">Триггер (привязка к событию)</option>
+          <option value="Правило двух минут">Правило двух минут</option>
+          <option value="Стэкинг">Стэкинг привычек</option>
+          <option value="Награда">Награда после действия</option>
+        </select>
+        <button type="submit" class="main-btn">Добавить</button>
+      </form>
+      <p id="name-error" class="error"></p>
+    </section>
+
+    <section class="box">
+      <h2>Мои привычки <span id="habit-count" class="badge">0</span></h2>
+      <ul id="habit-list"></ul>
+    </section>
+
+    <section class="box">
+      <h2>Календарь</h2>
+      <p id="habit-title">Выберите привычку</p>
+      <div class="cal-nav">
+        <button id="prev">&lt;</button>
+        <span id="month-title"></span>
+        <button id="next">&gt;</button>
+      </div>
+      <div id="calendar"></div>
+    </section>
+
+    <section class="box">
+      <h2>Статистика</h2>
+      <div class="stats">
+        <div class="stat"><span id="current">0</span><small>Текущая серия</small></div>
+        <div class="stat"><span id="best">0</span><small>Лучшая серия</small></div>
+        <div class="stat"><span id="total">0</span><small>Всего отметок</small></div>
+        <div class="stat"><span id="month-count">0</span><small>В этом месяце</small></div>
+      </div>
+    </section>
+
+    <section class="box">
+      <h2>Методы формирования привычек</h2>
+      <ul class="methods">
+        <li><b>Триггер</b> - привязать действие к событию (после завтрака - стакан воды).</li>
+        <li><b>Правило двух минут</b> - начать с версии привычки на две минуты.</li>
+        <li><b>Стэкинг</b> - добавлять новую привычку после уже устоявшейся.</li>
+        <li><b>Награда</b> - закреплять результат приятным подкреплением.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
