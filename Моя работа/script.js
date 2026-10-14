@@ -1,5 +1,3 @@
-
-
 var habits = [];
 var selectedId = null;
 var viewYear = new Date().getFullYear();
