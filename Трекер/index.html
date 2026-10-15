@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Трекер привычек</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Трекер привычек</h1>
+  <p id="message"></p>
+
+  <div class="box">
+    <h2>Мои привычки</h2>
+    <form id="habit-form">
+      <input type="text" id="habit-name" placeholder="Название привычки">
+      <button type="submit">Добавить</button>
+    </form>
+    <p id="name-error" class="error"></p>
+    <ul id="habit-list"></ul>
+  </div>
+
+  <div class="box">
+    <h2>Календарь </h2>
+    <p id="habit-title">Выберите привычку</p>
+    <div id="calendar"></div>
+  </div>
+
+  <div class="box">
+    <h2>Статистика</h2>
+    <p>Текущая серия: <span id="streak">0</span></p>
+    <p>Всего отметок: <span id="total">0</span></p>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

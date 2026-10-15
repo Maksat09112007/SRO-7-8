@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.box {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.error {
+  color: red;
+}
+
+#message {
+  color: green;
+}
+
+li {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+li.active {
+  font-weight: bold;
+  color: green;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+  margin-top: 10px;
+}
+
+#calendar button {
+  padding: 8px 0;
+}
+
+#calendar button.marked {
+  background: green;
+  color: white;
+}
+
+#calendar button.future {
+  color: #aaa;
+}
+
